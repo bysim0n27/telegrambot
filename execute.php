@@ -48,7 +48,43 @@
 		//i parametri sono cosa voglio mandare indietro al mio utente
 		$parameters = array('chat_id' => $chatId, "text" => $text);
 		
-		
+		<?php
+
+if(&text == "ciao"){
+    &risp= "benvenuto sulla pagia del bot del IIS8marzo";
+    $parameters= array('chat_id' => $risp);
+
+}
+
+if($text == "data)}
+    $risp = " la data odierna è:.date("d.m.y");
+    &parameters = array('chat_id' => $chatid, "text" => $risp);
+}
+if(&text == "foto"){
+    $foto[0] = "foto.jpg";
+    $foto[1] = "foto.jpg";
+
+    $i = rand (0,1);
+
+
+
+    sendfoto(&chatId, &foto[$i], false, "descrizione foto",&api);
+
+}
+
+if(&text == "barze"){
+    //salvo all'interno del vettore $barze 4 barzelette in posizioni differenti
+    &barze[0] = "che cos'è una zebra? un  cavallo evaso dal carcere!";
+    &barze[1] = " qual'è il colmo per un tuffatore? fare un buco nell'acqua."
+    &barze[2] = "chi la fa la vende, chi la compra non lo usa, chi la usa non la vede, cosa è???? la tomba."
+    $barze[3] = "qual è il colmo per un giardiniere? piantare la fidanzata.";
+    //genero un numero randoma tra 0 e 3 e lo salvo nella variabile $
+    $i = rand(0,3);
+
+
+
+    $parameters = array('chat_id" => $chatId, "text" => $barze[&i]);
+    ?>
 		
 		
 		//aggiungo il comando di invio
